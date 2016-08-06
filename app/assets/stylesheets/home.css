@@ -1,13 +1,7 @@
-#home_back {
+#home_back, #home_back_light, #home_back_mid, #home_back_dim {
   width: 100vw;
   height: 100vh;
   padding: 0px;
   margin: 0px;
-}
-
-#home_back_light {
-  width: 100vw;
-  height: 100vh;
-  padding: 0px;
-  margin: 0px;
+  z-index: -1;
 }
