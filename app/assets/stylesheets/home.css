@@ -1,4 +1,13 @@
-#home_back, #home_back_light, #home_back_mid, #home_back_dim {
+#home_back_light, #home_back_mid, #home_back_dim, #home_left, #home_right {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  z-index: 1;
+  display: none;
+}
+
+#home_back {
   width: 100vw;
   height: 100vh;
   padding: 0px;
