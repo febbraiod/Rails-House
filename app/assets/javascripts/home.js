@@ -41,7 +41,7 @@ function rail_lights(){
     clearInterval(l);
   }
 
-  setTimeout(clear, 6100);
+  setTimeout(clear, 5800);
 }
 
 function light_switch(){
@@ -92,5 +92,19 @@ function startTimer(){
   setTimeout(rail_lights, 3000);
   setTimeout(slideBanner, 4150);
   setTimeout(getAudio, 3300);
-  setTimeout(empty_window, 9400);
+  setTimeout(empty_window, 9000);
+}
+
+//for train light hover
+
+function trainLights(){
+  $('#train_lights_button').hover(showTrainLights, hideTrainLights);
+}
+
+function showTrainLights(){
+  $('#train_lights_on').show();
+}
+
+function hideTrainLights(){
+  $('#train_lights_on').hide();
 }

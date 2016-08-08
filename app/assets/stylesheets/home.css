@@ -1,4 +1,5 @@
-#home_back_light, #home_back_mid, #home_back_dim, #home_left, #home_right, #home_empty{
+#home_back_light, #home_back_mid, #home_back_dim, 
+#home_left, #home_right, #home_empty, #train_lights_on{
   width: 100vw;
   height: 100vh;
   padding: 0px;
@@ -49,4 +50,13 @@
   font-family: 'DIN';
   position: relative;
   left: 8px;
+}
+
+#train_lights_button {
+  position: fixed;
+  top:33%;
+  left:23%;
+  width: 300px;
+  height: 250px;
+  z-index: 2;
 }
