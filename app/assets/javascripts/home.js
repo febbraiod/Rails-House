@@ -48,6 +48,7 @@ function startTimer(){
   setTimeout(setIntervals, 300);
   setTimeout(rail_lights, 3000);
   setTimeout(slideBanner, 4150);
+  setTimeout(getAudio, 3300);
 }
 
 function rail_lights(){
@@ -57,7 +58,6 @@ function rail_lights(){
 }
 
 function light_switch(){
-  console.log('on');
   if ($("#home_left").css('display') == 'none'){
     $("#home_left").show();
     $("#home_right").hide();
@@ -70,3 +70,8 @@ function light_switch(){
 function slideBanner(){
   $('#home_banner').animate({'marginRight' : "+=500px"}, 3600);
 }
+
+function getAudio() {
+  document.getElementById('bells').play();
+}
+
