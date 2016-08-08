@@ -1,4 +1,5 @@
 
+//handles silouette flicker
 function flicker_on(){
 
   $("#home_back_light").show();
@@ -25,6 +26,48 @@ function flicker_mid(){
   $("#home_back_dim").hide();
 }
 
+//turns audio on
+function getAudio() {
+  document.getElementById('bells').play();
+}
+
+//handles railroad crossing lights
+function rail_lights(){
+  $("#home_left").show();
+  $("#home_back").hide();
+  var l = setInterval(light_switch, 700);
+
+  function clear(){
+    clearInterval(l);
+  }
+
+  setTimeout(clear, 6100);
+}
+
+function light_switch(){
+  if ($("#home_left").css('display') == 'none'){
+    $("#home_left").show();
+    $("#home_right").hide();
+  }else{
+    $("#home_right").show();
+    $("#home_left").hide();
+  }
+}
+
+//brings in banner
+function slideBanner(){
+  $('#home_banner').animate({'marginRight' : "+=500px"}, 3600);
+}
+
+//finish with empty window
+function empty_window(){
+  $('#home_empty').show();
+  $("#home_left").hide();
+  $("#home_right").hide();
+}
+
+
+// controls flicking in browser
 function setIntervals(){
   var a = setInterval(flicker_on, 600);
   var b = setInterval(flicker_dim, 530);
@@ -43,35 +86,11 @@ function setIntervals(){
   setTimeout(clear, 2600);
 }
 
-
+//binds events on doc load in application.js
 function startTimer(){
   setTimeout(setIntervals, 300);
   setTimeout(rail_lights, 3000);
   setTimeout(slideBanner, 4150);
   setTimeout(getAudio, 3300);
+  setTimeout(empty_window, 9400);
 }
-
-function rail_lights(){
-  $("#home_left").show();
-  $("#home_back").hide();
-  setInterval(light_switch, 700);
-}
-
-function light_switch(){
-  if ($("#home_left").css('display') == 'none'){
-    $("#home_left").show();
-    $("#home_right").hide();
-  }else{
-    $("#home_right").show();
-    $("#home_left").hide();
-  }
-}
-
-function slideBanner(){
-  $('#home_banner').animate({'marginRight' : "+=500px"}, 3600);
-}
-
-function getAudio() {
-  document.getElementById('bells').play();
-}
-
