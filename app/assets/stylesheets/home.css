@@ -14,3 +14,14 @@
   margin: 0px;
   z-index: -1;
 }
+
+#home_banner{
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  width: 490px;
+  height: 65px;
+  z-index: 2;
+  background-color: red;
+  margin-right: -500px;
+}
