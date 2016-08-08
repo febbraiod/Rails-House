@@ -47,7 +47,7 @@ function setIntervals(){
 function startTimer(){
   setTimeout(setIntervals, 300);
   setTimeout(rail_lights, 3000);
-  setTimeout(slideBanner, 4200)
+  setTimeout(slideBanner, 4150);
 }
 
 function rail_lights(){
@@ -68,5 +68,5 @@ function light_switch(){
 }
 
 function slideBanner(){
-  $('#home_banner').animate({'marginRight' : "+=500px"}, 3800);
+  $('#home_banner').animate({'marginRight' : "+=500px"}, 3600);
 }

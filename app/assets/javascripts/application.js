@@ -18,5 +18,4 @@
 
 $(function(){
   startTimer();
-  setBanner();
 });
