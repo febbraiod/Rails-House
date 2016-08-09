@@ -54,14 +54,8 @@ function light_switch(){
   }
 }
 
-//brings in banner
-// function slideBanner(){
-//   $('#home_banner').animate({'marginRight' : "+=500px"}, 3600);
-// }
-
 //finish with empty window
 function empty_window(){
-  $('#home_empty').show();
   $("#home_left").hide();
   $("#home_right").hide();
 }

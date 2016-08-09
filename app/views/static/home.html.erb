@@ -7,7 +7,7 @@
   <div id='train_lights_button'>
   </div>
 
-  <%=image_tag ('splash_train_lights.png'), id: 'train_lights_on', style: 'z-index: 3'%>
+  <%=image_tag ('splash_train_lights.png'), id: 'train_lights_on'%>
 
   <%=image_tag ('splash_light_dim.jpg'), id: 'home_back_dim'%>
 
@@ -17,7 +17,9 @@
 
   <%=image_tag ('splash.jpg'), id: 'home_back'%>
 
-  <%=image_tag ('splash_left_rail.jpg'), id: 'home_left'%>
+  <div class='left'>
+    <%=image_tag ('splash_left_rail.jpg'), id: 'home_left'%>
+  </div>
 
   <%=image_tag ('splash_right_rail.jpg'), id: 'home_right'%>
 

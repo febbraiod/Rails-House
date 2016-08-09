@@ -1,5 +1,5 @@
 #home_back_light, #home_back_mid, #home_back_dim, 
-#home_left, #home_right, #home_empty, #train_lights_on{
+#home_left, #home_right, #train_lights_on{
   width: 100vw;
   height: 100vh;
   padding: 0px;
@@ -16,9 +16,17 @@
   z-index: -1;
 }
 
+#home_empty {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  z-index: -2;
+}
+
 @keyframes banner_slide {
-    0%   {margin-right: -501px;}
-    53%  {margin-right: -500px;}
+    0%   {margin-right: -500px;}
+    52%  {margin-right: -500px;}
     100% {margin-right: 0px;}
 }
 
