@@ -69,13 +69,13 @@ function setIntervals(){
   var d = setInterval(flicker_dim, 550);
   var e = setInterval(flicker_off, 650);
 
-  function clear(){
+  var clear = function(){
     clearInterval(a);
     clearInterval(b);
     clearInterval(c);
     clearInterval(d);
     clearInterval(e);
-  }
+  };
 
   setTimeout(clear, 2600);
 }
