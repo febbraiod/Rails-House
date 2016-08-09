@@ -45,7 +45,7 @@ function rail_lights(){
 }
 
 function light_switch(){
-  if ($("#home_left").css('display') == 'none'){
+  if ($("#home_left").css('display') === 'none'){
     $("#home_left").show();
     $("#home_right").hide();
   }else{
