@@ -22,7 +22,6 @@
     100% {margin-right: 0px;}
 }
 
-
 #home_banner{
   position: absolute;
   right: 0px;
@@ -36,16 +35,12 @@
 }
 
 #banner_head{
-/*  font-family: 'DIN bold';*/
+  font-family: 'DIN bold';
   display:inline;
   -letter-kern: 1px 0 0 1px 1px
                   1px 2px 1px 0 0px
                   1px 1px 0;
   -word-color: #000 #ffffff;
-}
-
-#banner_rails {
-
 }
 
 #banner_type{
@@ -55,9 +50,9 @@
 }
 
 #home_nav {
-/*  font-family: 'DIN';*/
   position: relative;
   left: 8px;
+  font-size: .8em;
 }
 
 #train_lights_button {
