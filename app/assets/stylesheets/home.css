@@ -16,6 +16,13 @@
   z-index: -1;
 }
 
+@keyframes banner_slide {
+    0%   {margin-right: -501px;}
+    53%  {margin-right: -500px;}
+    100% {margin-right: 0px;}
+}
+
+
 #home_banner{
   position: absolute;
   right: 0px;
@@ -24,7 +31,8 @@
   height: 60px;
   z-index: 2;
   background-color: red;
-  margin-right: -500px;
+  animation-name: banner_slide;
+  animation-duration: 8s;
 }
 
 #banner_head{

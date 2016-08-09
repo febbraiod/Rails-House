@@ -55,9 +55,9 @@ function light_switch(){
 }
 
 //brings in banner
-function slideBanner(){
-  $('#home_banner').animate({'marginRight' : "+=500px"}, 3600);
-}
+// function slideBanner(){
+//   $('#home_banner').animate({'marginRight' : "+=500px"}, 3600);
+// }
 
 //finish with empty window
 function empty_window(){
@@ -90,7 +90,7 @@ function setIntervals(){
 function startTimer(){
   setTimeout(setIntervals, 300);
   setTimeout(rail_lights, 3000);
-  setTimeout(slideBanner, 4150);
+  // setTimeout(slideBanner, 4150);
   setTimeout(getAudio, 3300);
   setTimeout(empty_window, 9000);
 }
