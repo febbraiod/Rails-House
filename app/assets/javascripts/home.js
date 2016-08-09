@@ -37,9 +37,9 @@ function rail_lights(){
   $("#home_back").hide();
   var l = setInterval(light_switch, 700);
 
-  function clear(){
+  var clear = function(){
     clearInterval(l);
-  }
+  };
 
   setTimeout(clear, 5800);
 }
