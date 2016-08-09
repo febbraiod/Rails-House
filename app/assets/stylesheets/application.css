@@ -13,13 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-@font-face {
-  font-family: "DIN bold";
-  src: url(/assets/din1451alt_G.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "DIN";
-  src: url(/assets/din1451alt.ttf) format("truetype");
-}

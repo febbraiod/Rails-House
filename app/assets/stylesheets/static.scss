@@ -3,10 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @font-face {
-  font-family: 'Icomoon';
-  src: url('icomoon.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "DIN bold";
+  src: asset-url('/assets/din1451alt_G.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "DIN";
+  src: asset-url('/assets/din1451alt.ttf') format("truetype");
 }
 
 h1 {
