@@ -1,3 +1,10 @@
+a {
+  display: inline;
+  color: black;
+  font-family: 'DIN';
+  font-size: .8em;
+}
+
 #home_back_light, #home_back_mid, #home_back_dim, 
 #home_left, #home_right, #train_lights_on{
   width: 100vw;
@@ -60,7 +67,6 @@
 #home_nav {
   position: relative;
   left: 8px;
-  font-size: .8em;
 }
 
 #train_lights_button {
