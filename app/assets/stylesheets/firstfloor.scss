@@ -1,0 +1,20 @@
+// Place all the styles related to the FirstFloor controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#entry  {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  z-index: -1;
+  }
+
+#package {
+  position: fixed;
+  max-width: 170px;
+  left: 34%;
+  top: 74%;
+  z-index: 1;
+  }
