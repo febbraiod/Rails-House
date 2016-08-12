@@ -11,10 +11,17 @@
   z-index: -1;
   }
 
-#package {
-  position: fixed;
-  max-width: 170px;
+#package_div {
+  position: absolute;
   left: 34%;
-  top: 74%;
+  bottom: 9%;
   z-index: 1;
   }
+
+#package, #package_highlight{
+  max-width: 165px;
+}
+
+#package_highlight{
+  display: none;
+}
