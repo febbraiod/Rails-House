@@ -1,27 +1,23 @@
 
 //handles silouette flicker
 function flicker_on(){
-
   $("#home_back_light").show();
   $("#home_back_dim").hide();
   $("#home_back_mid").hide();
 }
 
 function flicker_off(){
-
   $("#home_back_light").hide();
   $("#home_back_dim").hide();
   $("#home_back_mid").hide();
 }
 
 function flicker_dim(){
-
   $("#home_back_dim").show();
   $("#home_back_mid").hide();
 }
 
 function flicker_mid(){
-
   $("#home_back_mid").show();
   $("#home_back_dim").hide();
 }
@@ -60,7 +56,6 @@ function empty_window(){
   $("#home_right").hide();
 }
 
-
 // controls flicking in browser
 function setIntervals(){
   var a = setInterval(flicker_on, 600);
@@ -84,13 +79,11 @@ function setIntervals(){
 function startTimer(){
   setTimeout(setIntervals, 300);
   setTimeout(rail_lights, 3000);
-  // setTimeout(slideBanner, 4150);
   setTimeout(getAudio, 3300);
   setTimeout(empty_window, 9000);
 }
 
 //for train light hover
-
 function trainLights(){
   $('#train_lights_button').hover(showTrainLights, hideTrainLights);
 }

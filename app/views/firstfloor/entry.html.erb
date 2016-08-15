@@ -1,5 +1,5 @@
 <div id='package_div'>
-  <%=image_tag ('entry/package_highlight.png'), id: 'package_highlight' if true%> <!-- use the conditional to test if the user has already collected the package -->
+  <%=link_to (image_tag ('entry/package_highlight.png'), id: 'package_highlight'), stoop_path if true%> <!-- use the conditional to test if the user has already collected the package -->
   <%=image_tag ('entry/package.png'), id: 'package' if true%> <!-- use the conditional to test if the user has already collected the package -->
 </div>
 
