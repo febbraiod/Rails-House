@@ -6,4 +6,7 @@ class FirstfloorController < ApplicationController
   def stoop
   end
 
+  def foyer
+  end
+
 end

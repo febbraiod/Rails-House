@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-#entry  {
+#entry {
   width: 100vw;
   height: 100vh;
   padding: 0px;
@@ -18,18 +18,46 @@
   z-index: 1;
 }
 
-#package, #package_highlight{
+#package, #package_highlight {
   max-width: 165px;
 }
 
-#package_highlight{
+#package_highlight {
   display: none;
 }
 
-
-#stoop{
+#stoop {
   width: 100vw;
   height: 100vh;
   padding: 0px;
   margin: 0px;
+}
+
+#foyer {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+#foyer_1024{
+  display: none;
+}
+
+@media (min-width:769px) and (max-width:1024px){
+  #foyer_1024{
+    display: block;
+  }
+  #foyer_default{
+    display: none;
+  }
+}
+/*tablet*/
+@media (min-device-width:769px) and (max-device-width:1024px){
+  #foyer_1024{
+    display: block;
+  }
+  #foyer_default{
+    display: none;
+  }
 }
