@@ -26,6 +26,21 @@
   display: none;
 }
 
+#noteondoor_div {
+  position: absolute;
+  left: 49%;
+  bottom: 50%;
+  z-index: 1;
+}
+
+#noteondoor, #noteondoor_highlight {
+  max-width: 70px;
+}
+
+#noteondoor_highlight {
+  display: none;
+}
+
 #stoop {
   width: 100vw;
   height: 100vh;
