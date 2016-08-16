@@ -41,6 +41,19 @@
   display: none;
 }
 
+#frontdoor_note_text {
+  position: absolute;
+  right: 0px;
+  max-width: 500px;
+  height: 500px;
+  z-index: 2;
+}
+
+#noteondoor_closeup {
+  max-width: 500px;
+  margin-right: -500px;
+}
+
 #stoop {
   width: 100vw;
   height: 100vh;

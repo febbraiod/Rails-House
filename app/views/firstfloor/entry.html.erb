@@ -1,3 +1,7 @@
+<div id='frontdoor_note_text'>
+<%=image_tag ('entry/noteondoor_closeup.jpg'), id: 'noteondoor_closeup'%>
+</div>
+
 <div id='package_div'>
   <%=link_to (image_tag ('entry/package_highlight.png'), id: 'package_highlight'), stoop_path if true%> <!-- use the conditional to test if the user has already collected the package -->
   <%=image_tag ('entry/package.png'), id: 'package' if true%> <!-- use the conditional to test if the user has already collected the package -->

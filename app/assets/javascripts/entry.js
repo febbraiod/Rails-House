@@ -1,5 +1,9 @@
+var frontDoorKey = false;
+// var holdingNote = false;
+
 $(function(){
   bindEntryHighlights();
+  bindNoteClick();
 });
 
 function bindEntryHighlights(){
@@ -25,4 +29,19 @@ function showNoteHighlight(){
 function hideNoteHighlight(){
   $('#noteondoor_highlight').hide();
   $('#noteondoor').show();
+}
+
+function bindNoteClick(){
+  $('#noteondoor_highlight').on('click', slideNote);
+  $('#frontdoor_note_text').on('click', hideNote);
+}
+
+function slideNote(){
+  $('#frontdoor_note_text').animate({"margin-right": "+=500px"}, 800);
+}
+
+function hideNote(){
+  $('#frontdoor_note_text').hide();
+  $('#noteondoor_highlight').hide();
+  $('#noteondoor').hide();
 }
