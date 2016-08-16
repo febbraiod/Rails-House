@@ -6,6 +6,7 @@ $(function(){
   bindNoteClick();
   bindKeyHover();
   bindLaptopHover();
+  bindLaptopClick();
 });
 
 function bindEntryHighlights(){
@@ -66,6 +67,15 @@ function bindLaptopHover(){
   }, function(){
     $('#stoop').show();
     $('#stoop_laptop_highlight').hide();
+  });
+}
+
+function bindLaptopClick(){
+  $('#laptop_hover').click(function(){
+    $('#laptop_hover').hide();
+    $('#stoop_laptop_highlight').hide();
+    $('#stoop').hide();
+    $('#stoop_key').show();
   });
 }
 

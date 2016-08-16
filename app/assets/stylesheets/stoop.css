@@ -27,7 +27,7 @@
   left: 23%;
   width: 22%;
   height: 22%;
-  display: none;
+  z-index: 2;
 }
 
 #stoop_laptop_highlight {
