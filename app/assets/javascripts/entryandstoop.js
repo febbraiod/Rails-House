@@ -1,12 +1,17 @@
 var frontDoorKey = false;
-var holdingNote = false;
+// var holdingNote = false;
 
 $(function(){
   bindEntryHighlights();
   bindNoteClick();
-  bindKeyHover();
   bindLaptopHover();
   bindLaptopClick();
+  bindKeyHover();
+  bindKeyClick();
+  if(frontDoorKey === true){
+    $('#package').hide();
+    $('#package_highlight').hide();
+  }
 });
 
 function bindEntryHighlights(){
@@ -40,24 +45,11 @@ function bindNoteClick(){
 }
 
 function slideNote(){
-  $('#frontdoor_note_text').animate({"margin-right": "+=500px"}, 800);
+  $('#frontdoor_note_text').animate({"margin-right": "+=1000px"}, 800);
 }
 
 function hideNote(){
-  $('#frontdoor_note_text').hide();
-  $('#noteondoor_highlight').hide();
-  $('#noteondoor').hide();
-  holdingNote = true;
-}
-
-function bindKeyHover(){
-  $('#key_hover').hover(function(){
-    $('#stoop_key_highlight').show();
-    $('#stoop_key').hide();
-  }, function(){
-    $('#stoop_key').show();
-    $('#stoop_key_highlight').hide();
-  });
+  $('#frontdoor_note_text').animate({"margin-right": "-=1000px"}, 800);
 }
 
 function bindLaptopHover(){
@@ -77,6 +69,23 @@ function bindLaptopClick(){
     $('#stoop').hide();
     $('#stoop_key').show();
   });
+}
+
+function bindKeyHover(){
+  $('#key_hover').hover(function(){
+    $('#stoop_key_highlight').show();
+    $('#stoop_key').hide();
+  }, function(){
+    $('#stoop_key').show();
+    $('#stoop_key_highlight').hide();
+  });
+}
+
+function bindKeyClick(){
+  $('#key_hover').click(function(){
+    frontDoorKey = true;
+  });
+
 }
 
 
