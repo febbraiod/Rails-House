@@ -11,6 +11,15 @@
   z-index: -1;
 }
 
+#entry_with_key {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  z-index: -2;
+  display: none;
+}
+
 #package_div {
   position: absolute;
   left: 34%;

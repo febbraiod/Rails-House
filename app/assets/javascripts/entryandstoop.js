@@ -11,6 +11,8 @@ $(function(){
   if(frontDoorKey === true){
     $('#package').hide();
     $('#package_highlight').hide();
+    $('#entry').hide();
+    $('#entry_with_key').show();
   }
 });
 
