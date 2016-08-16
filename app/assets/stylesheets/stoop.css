@@ -1,0 +1,30 @@
+#stoop {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+#stoop_key {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+/*  display: none;*/
+}
+
+#stoop_key_hightlight {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  display: none;
+}
+
+#key_hover {
+  position: absolute;
+  top: 47%;
+  left: 23%;
+  width: 22%;
+  height: 22%;
+}
