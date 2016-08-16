@@ -10,10 +10,10 @@
   height: 100vh;
   padding: 0px;
   margin: 0px;
-/*  display: none;*/
+  display: none;
 }
 
-#stoop_key_hightlight {
+#stoop_key_highlight {
   width: 100vw;
   height: 100vh;
   padding: 0px;
@@ -27,4 +27,23 @@
   left: 23%;
   width: 22%;
   height: 22%;
+  display: none;
+}
+
+#stoop_laptop_highlight {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  z-index: 2;
+  display: none;
+}
+
+#laptop_hover {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  width: 33%;
+  height: 50%;
+  z-index: 3;
 }

@@ -5,6 +5,7 @@ $(function(){
   bindEntryHighlights();
   bindNoteClick();
   bindKeyHover();
+  bindLaptopHover();
 });
 
 function bindEntryHighlights(){
@@ -50,11 +51,21 @@ function hideNote(){
 
 function bindKeyHover(){
   $('#key_hover').hover(function(){
-    $('#stoop_key_hightlight').show();
+    $('#stoop_key_highlight').show();
     $('#stoop_key').hide();
   }, function(){
     $('#stoop_key').show();
-    $('#stoop_key_hightlight').hide();
+    $('#stoop_key_highlight').hide();
+  });
+}
+
+function bindLaptopHover(){
+  $('#laptop_hover').hover(function(){
+    $('#stoop_laptop_highlight').show();
+    $('#stoop').hide();
+  }, function(){
+    $('#stoop').show();
+    $('#stoop_laptop_highlight').hide();
   });
 }
 
