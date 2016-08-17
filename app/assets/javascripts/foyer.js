@@ -1,6 +1,8 @@
 $(function(){
   bindFoyerHovers();
   bindFoyerSounds();
+  ruby_click();
+  laptop_click();
 });
 
 function bindFoyerHovers(){
@@ -51,4 +53,16 @@ function lockedSound() {
 
 function unlockedSound() {
   document.getElementById('unlocked').play();
+}
+
+function ruby_click(){
+  $('#foyer_ruby_hover').click(function(){
+    $('#laptop_fordemo').slideDown(1500);
+  });
+}
+
+function laptop_click(){
+  $('#laptop_fordemo').click(function(){
+    $('#laptop_fordemo').slideUp(1500);
+  });
 }
