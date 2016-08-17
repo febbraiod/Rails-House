@@ -1,5 +1,6 @@
 $(function(){
   bindFoyerHovers();
+  bindFoyerSounds();
 });
 
 function bindFoyerHovers(){
@@ -36,4 +37,18 @@ function mainhouseHoverOn(){
 function mainhouseHoverOff(){
   $('#foyer_mainhouse_highlight').hide();
   $('#foyer').show();
+}
+
+// audio
+function bindFoyerSounds(){
+  $('#foyer_basement_hover').click(lockedSound);
+  $('#foyer_mainhouse_hover').click(lockedSound);
+}
+
+function lockedSound() {
+  document.getElementById('locked').play();
+}
+
+function unlockedSound() {
+  document.getElementById('unlocked').play();
 }
