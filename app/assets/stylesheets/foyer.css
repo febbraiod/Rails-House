@@ -59,7 +59,7 @@
 
 #laptop_fordemo {
   position: fixed;
-  bottom: 0px;
+  bottom: -6px;
   left: 17%;
   display: none;
   z-index: 5;
